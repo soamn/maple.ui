@@ -5,7 +5,7 @@ import Header from "./components/header";
 
 export const metadata: Metadata = {
   title: "Maple",
-  description: "Dashboard UI with Sidebar",
+  description: "Ui library for laravel blade",
 };
 
 export default function RootLayout({
