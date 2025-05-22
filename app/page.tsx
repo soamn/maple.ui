@@ -16,7 +16,7 @@ export default function Home() {
           <p className="text-lg md:text-xl text-amber-100 leading-relaxed">
             Welcome to <span className="font-semibold">Maple Ui</span> — A ui
             library for Laravel/Blade that you were always looking for, Get
-            beautiful Animated components for your Larvel project
+            beautiful Animated components for your Laravel project.
           </p>
 
           <div className="flex justify-center gap-4">
