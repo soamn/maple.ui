@@ -58,9 +58,9 @@ const page = () => {
 
     <nav class="px-4 py-4 flex-grow text-black">
       <ul class="space-y-3">
-        <li><a href="#" class="block px-2 py-1 rounded hover:bg-gray-200">Dashboard</a></li>
-        <li><a href="#" class="block px-2 py-1 rounded hover:bg-gray-200">Profile</a></li>
-        <li><a href="#" class="block px-2 py-1 rounded hover:bg-gray-200">Settings</a></li>
+        <li><p  class="block px-2 py-1 rounded hover:bg-gray-200">Dashboard</p></li>
+        <li><p  class="block px-2 py-1 rounded hover:bg-gray-200">Profile</p></li>
+        <li><p  class="block px-2 py-1 rounded hover:bg-gray-200">Settings</p></li>
       </ul>
     </nav>
   </aside>
