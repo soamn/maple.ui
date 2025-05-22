@@ -66,7 +66,7 @@ const page = () => {
     }
   </style>
 </head>
-<body class="flex items-center bg-black min-h-screen overflow-hidden">
+<body class="flex items-center  min-h-screen overflow-hidden">
   <div
     x-data="carousel3D({ items: 8, distance: 1900 })"
     x-init="startAutoRotate(false)"
@@ -84,9 +84,9 @@ const page = () => {
         <template x-for="(item, index) in 8" :key="index">
           <div
             class="absolute inset-0"
-            :style="'transform: rotateY(' + (index * 45) + 'deg) translateZ(1200px);'"
+            :style="'transform: rotateY(' + (index * 45) + 'deg) translateZ(1800px);'"
           >
-            <div class="w-full h-full flex items-center justify-center rounded-lg shadow-xl overflow-hidden">
+            <div class="w-full h-full flex  items-center justify-center rounded-lg shadow-xl overflow-hidden">
               <img
                 :src="[
                   'https://images.pexels.com/photos/2088210/pexels-photo-2088210.jpeg',
@@ -113,9 +113,9 @@ const page = () => {
 `;
 
   return (
-    <div className="w-full  ">
-      <h1 className="text-3xl font-extabold mb-5">Carousal 3d</h1>
-      <p className="p-2">3d carousal with perspective depth</p>
+    <div className="w-screen mx-auto px-4 py-10 max-w-3xl">
+      <h1 className="text-3xl font-extabold ">Carousal 3d</h1>
+      <p className="p-4">3d carousal with perspective depth</p>
       <Codeblock language="terminal">
         php artisan maple:install card/carousal3d
       </Codeblock>
@@ -139,36 +139,12 @@ const page = () => {
             'image' => 
             'https://images.pexels.com/photos/2253573/pexels-photo-2253573.jpeg?auto=compress&cs=tinysrgb&w=600',
         ],
-        [
-            'id' => 4,
-            'image' =>
-                'https://images.pexels.com/photos/1906794/pexels-photo-1906794.jpeg?auto=compress&cs=tinysrgb&w=600',
-        ],
-        [
-            'id' => 5,
-            'image' =>
-            'https://images.pexels.com/photos/1906794/pexels-photo-1906794.jpeg?auto=compress&cs=tinysrgb&w=600',
-        ],
-        [
-            'id' => 6,
-            'image' =>
-            'https://images.pexels.com/photos/32094012/pexels-photo-32094012/free-photo-of-tall-birch-tree-on-a-sunny-hillside.jpeg?auto=compress&cs=tinysrgb&w=600',
-        ],
-        [
-            'id' => 7,
-            'image' =>
-            'https://images.pexels.com/photos/2240137/pexels-photo-2240137.jpeg?auto=compress&cs=tinysrgb&w=600',
-        ],
-        [
-            'id' => 8,
-            'image' => 
-            'https://images.pexels.com/photos/62636/pexels-photo-62636.jpeg?auto=compress&cs=tinysrgb&w=600',
-        ],
+     
  ]" />
             `}
           </Codeblock>
         }
-        preview={<Preview srcDoc={srcDoc} height={800} />}
+        preview={<Preview srcDoc={srcDoc} height={400} />}
       />
       <p className="text-3xl mb-5">Props</p>
       <p className="text-amber-200 bg-zinc-500 rounded w-fit">`autoRotate`</p>

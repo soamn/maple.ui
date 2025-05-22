@@ -7,13 +7,13 @@ const page = () => {
       <h1 className="font-bold text-5xl">Installation</h1>
       <div className="ml-4">
         <p className=" text-lg mt-4">Steps</p>
-        <p className="ml-6 mt-5 ">Add Alpine.js</p>
+        <p className="p-2">Add Alpine.js</p>
         <Codeblock language="terminal">{`<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>`}</Codeblock>
-        <p className="ml-6 mt-5 ">Run the install command </p>
+        <p className="p-4 ">Run the install command </p>
         <Codeblock language="terminal">{`composer require soamn/maple`}</Codeblock>
-        <p className="ml-6 mt-5 ">Add a component </p>
+        <p className="p-4 ">Add a component </p>
         <Codeblock language="terminal">{` php artisan maple:install card/untouchable`}</Codeblock>
-        <p className="ml-6 mt-5 ">Use the component in your project</p>
+        <p className="p-4 ">Use the component in your project</p>
         <Codeblock language="blade">
           {` <x-maple.card.untouchable maxRotation=20 class="">
         <div class="absolute bg-black 

@@ -19,9 +19,9 @@ export default function Codeblock({ language, children }: Props) {
 
   const prismLang = language === "blade" ? "markup" : language;
   return (
-    <div className={" rounded-lg p-4 w-fit overflow-auto max-w-400 max-h-120 "}>
+    <div className={" rounded-lg  w-full overflow-auto max-w-400  max-h-120 "}>
       <div className="text-xs text-gray-400 mb-2">{language.toUpperCase()}</div>
-      <pre className="text-sm leading-relaxed">
+      <pre className=" leading-relaxed text-wrap">
         <code className={`language-${prismLang} `}>{children}</code>{" "}
       </pre>
     </div>

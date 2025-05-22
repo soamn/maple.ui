@@ -93,9 +93,9 @@ const page = () => {
     `;
 
   return (
-    <div className="w-full  ">
-      <h1 className="text-3xl font-extabold mb-5">Sidebar</h1>
-      <p className="p-2">Sidebar for Dashboards</p>
+    <div className="w-screen mx-auto px-4 py-10 max-w-3xl">
+      <h1 className="text-3xl font-extabold ">Sidebar</h1>
+      <p className="p-4">Sidebar for Dashboards</p>
       <Codeblock language="terminal">
         php artisan maple:install sidebar
       </Codeblock>

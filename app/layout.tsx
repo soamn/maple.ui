@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Sidebar from "./components/sidebar";
 import Header from "./components/header";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "./components/sidebar";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Maple",
@@ -15,12 +16,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased  ml-40  overflow-x-clip `}>
+      <body
+        className={`antialiased bg-zinc-900   overflow-x-clip text-white  `}
+      >
         <Header />
-        <div className="flex mt-30  border-white">
-          <Sidebar />
-          <main className="flex-1   text-white mt-5">{children}</main>
-        </div>
+        <SidebarProvider>
+          <AppSidebar />
+          <main className="mt-20 md:pl-[9rem] md:pr-[7rem]">
+            <SidebarTrigger className="text-white hover:bg-transparent hover:text-white lg:hidden " />
+            {children}
+          </main>
+        </SidebarProvider>
       </body>
     </html>
   );

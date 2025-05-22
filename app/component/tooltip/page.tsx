@@ -104,9 +104,9 @@ const page = () => {
 `;
 
   return (
-    <div className="w-full  ">
-      <h1 className="text-3xl font-extabold mb-5">Tooltip</h1>
-      <p className="p-2">Animated Tooltip</p>
+    <div className="w-screen mx-auto px-4 py-10 max-w-3xl">
+      <h1 className="text-3xl font-extabold ">Tooltip</h1>
+      <p className="p-4">Animated Tooltip</p>
       <Codeblock language="terminal">
         php artisan maple:install tooltip
       </Codeblock>
